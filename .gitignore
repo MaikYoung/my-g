@@ -162,6 +162,7 @@ dmypy.json
 
 # mkdocs documentation
 images
+.idea
 # mypy
 
 # Pyre type checker
