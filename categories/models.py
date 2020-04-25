@@ -13,9 +13,5 @@ class Category(models.Model):
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
-    def save_model(self, request, obj, form, change):
-        print(request)
-        print(obj)
-        print(form)
-        print(change)
-        super(Category, self).save_model(request, obj, form, change)
+    def __str__(self):
+        return self.name_admin

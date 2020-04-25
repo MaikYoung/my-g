@@ -42,8 +42,9 @@ INSTALLED_APPS = [
     'people',
     'categories',
     'products',
+    'philosophy'
 ]
-
+#  blog,
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
