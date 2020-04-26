@@ -12,7 +12,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
     @staticmethod
     def current_image(obj):
-        to_return = f'<img src="http://127.0.0.1:8000/{obj.image_to_show}">'
+        to_return = f'<img src="http://127.0.0.1:8000/images/{obj.image_to_show}">'
         return mark_safe(to_return)
 
 

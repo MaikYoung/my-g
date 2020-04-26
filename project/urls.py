@@ -17,9 +17,16 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
+from categories.views import categories_by_gender_render
+from people.views import genders_render
+from products.views import products_list_by_category_render, product_detail
 from project import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', genders_render),
+    path('categories/<int:gender>', categories_by_gender_render),
+    path('products/<int:category>', products_list_by_category_render),
+    path('product_detail/<int:product>', product_detail)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + \
               static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

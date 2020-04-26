@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      {% for product in products %}
+      <a href="http://0.0.0.0:8000/product_detail/{{product.pk}}">
+         <img src="http://0.0.0.0:8000/images/{{product.image_to_show}}" alt="image">
+        {{product.name_to_show}}
+        {{product.price}}
+      </a>
+      {% endfor %}
+</body>
+</html>

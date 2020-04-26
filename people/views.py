@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+from people.models import Gender
+
+
+def genders_render(request):
+    genders = Gender.objects.all()
+    context = {'genders': genders}
+    return render(request, 'people/people.html', context)

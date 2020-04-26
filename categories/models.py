@@ -6,7 +6,7 @@ class Category(models.Model):
     gender = models.ForeignKey(Gender, on_delete=models.CASCADE)
     name_admin = models.CharField(max_length=100)
     name_to_show = models.CharField(max_length=100)
-    image_to_show = models.ImageField(upload_to='images/')
+    image_to_show = models.ImageField(upload_to='categories/')
     available = models.BooleanField(default=True)
 
     class Meta:

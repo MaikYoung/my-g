@@ -13,10 +13,10 @@ class ProductAdmin(admin.ModelAdmin):
     @staticmethod
     def current_image(obj):
         to_return = '<p>IMAGEN 1.</p>'
-        to_return += f'<img src="http://127.0.0.1:8000/{obj.image_to_show}">'
+        to_return += f'<img src="http://127.0.0.1:8000/images/{obj.image_to_show}">'
         to_return += '<hr>'
         to_return += '<p>IMAGEN 2.</p>'
-        to_return += f'<img src="http://127.0.0.1:8000/{obj.image_to_show_two}">'
+        to_return += f'<img src="http://127.0.0.1:8000/images/{obj.image_to_show_two}">'
         return mark_safe(to_return)
 
     @staticmethod

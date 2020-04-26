@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+         <img src="http://0.0.0.0:8000/images/{{product.image_to_show}}" alt="image">
+         <img src="http://0.0.0.0:8000/images/{{product.image_to_show_two}}" alt="image">
+        {{product.name_to_show}}
+        precio: {{product.price}}
+        descripcion: {{product.description}}
+        stock: {{product.available}}
+         tallas:
+       s {{product.sizes_s}}
+       m  {{product.sizes_m}}
+       l {{product.sizes_l}}
+       xl {{product.sizes_xl}}
+       xxl {{product.sizes_xxl}}
+
+</body>
+</html>
